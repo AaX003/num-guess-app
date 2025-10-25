@@ -1,5 +1,4 @@
-/* ===== Reset & Base ===== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+
 
 :root {
   --bg: #f5f4f0;        /* soft beige-gray background */
@@ -27,8 +26,11 @@ html, body {
 
 /* ===== Container ===== */
 .container {
+  display: flex; flex-direction: column;
+  justify-content: center; place-self: center;
   border: 1px dashed rgba(156, 132, 114, 0.489);
-  width: min(420px, 92vw);
+  width: 90%;
+  max-width: 230px;
   background: var(--panel);
   border-radius: 16px;
   box-shadow: 0 6px 24px rgba(0,0,0,.08);
@@ -63,8 +65,7 @@ html, body {
 
 /* ===== Input & Button ===== */
 .input-container {
-  display: flex;
-  align-items: center;
+  display: grid;
   gap: 0.5rem;
   margin-top: 1.4rem;
 }
